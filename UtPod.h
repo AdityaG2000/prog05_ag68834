@@ -11,7 +11,7 @@ private:
     static const int MAX_MEMORY = 512;
     static const int SUCCESS = 0;
     static const int NO_MEMORY = -1;
-    static const int NOT_FOUND = -2; //??
+    static const int NOT_FOUND = -2;
 
     struct SongNode
     {
