@@ -17,7 +17,15 @@ You will want to do more complete testing.
 using namespace std;
 
 int main(int argc, char *argv[])
-{
+{   
+    cout << "Creating UtPod of 600 MB, which should make it become 512 MB" << endl;
+    UtPod p;
+    new(&p) UtPod(600);
+    cout << "Created" << endl;
+    cout << "memory size = " << p.getTotalMemory() << endl << endl;
+    cout << "destroying first pod now" << endl;
+    p.~UtPod();    
+
     cout << "Creating UtPod of default size ... " << endl << endl;
     UtPod t;
     cout << "Created" << endl;
